@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "ShowDate";
+
+    Product product = ViewBag.Product as Product;
+}
+
+<h1>@ViewBag.Date</h1>
+<h1>@ViewBag.CallBack</h1>
+
+<h2>@product.Id => @product.Name => @product.Price</h2>
+
