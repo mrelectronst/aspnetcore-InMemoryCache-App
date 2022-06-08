@@ -25,7 +25,7 @@ namespace InMemoryCache.App.Controllers
 
                 //cacheEntryOptions.SlidingExpiration = TimeSpan.FromSeconds(10);
 
-                cacheEntryOptions.Priority = CacheItemPriority.Normal;
+                cacheEntryOptions.Priority = CacheItemPriority.High;
 
                 cacheEntryOptions.RegisterPostEvictionCallback((key, value, reason, state) =>
                 {
